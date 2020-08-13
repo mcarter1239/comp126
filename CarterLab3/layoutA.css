@@ -1,0 +1,24 @@
+div {
+    height: 50vh;
+    width: 50%;
+}
+
+.topleft {
+    background: blue;
+    float: left;
+}
+
+.topright {
+    background: red;
+    float: right;
+}
+
+.bottomleft {
+    background: green;
+    float: left;
+}
+
+.bottomright {
+    background: purple;
+    float: right;
+}

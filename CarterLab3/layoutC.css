@@ -1,0 +1,44 @@
+html {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#text {
+    width: 70%;
+    position: relative;
+    left: 15vw;
+}
+
+header {
+    background: gray;
+    height: 80px;
+    text-align: center;
+}
+
+#floated {
+    background: purple;
+    float: left;
+    text-align: center;
+    height: 200px;
+    width: 180px;
+    margin-right: 20px;
+}
+
+#abs {
+    position: absolute;
+    height: 400px;
+    width: 10vw;
+    left: 2.5vw;
+    background: blue;
+
+}
+
+footer {
+    background: teal;
+    text-align: center;
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+}

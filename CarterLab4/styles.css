@@ -1,0 +1,124 @@
+body {
+    font-family: Roboto;
+    background: #dddddd;
+    margin: 0px;
+}
+
+.menubar {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background: grey;
+    top: 0px;
+    padding: 10px;
+    margin: 0px;
+    z-index: 5;
+}
+
+.menubar li {
+    display: inline-block;
+    background: rgb(94, 94, 94);
+    padding: 10px;
+    position: relative;
+}
+
+.menubar li:hover {
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+
+
+.menubar a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown_menu {
+    visibility: hidden;
+    padding: 0px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    z-index: 10;
+    display: block;
+
+}
+
+li:hover .dropdown_menu {
+    visibility: visible;
+}
+
+.menubar li ul li a {
+    white-space: nowrap;
+}
+
+footer {
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: rgb(94, 94, 94);
+    padding: 10px;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+}
+
+.jumbotron {
+    background-image: url('background.jpg');
+    margin: 0px;
+    position: relative;
+    top: 30px;
+    height: 40vh;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    color: black;
+    position: relative;
+    height: 20vh;
+    top: 10vh;
+    width: 100%;
+}
+
+.col {
+    display: inline-block;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.btn-main {
+    display: inline-block;
+    background: rgb(94, 94, 94);
+    padding: 10px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-main:hover {
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+}
+
+.col a {
+    display: inline-block;
+    background: rgb(94, 94, 94);
+    padding: 10px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.col a:hover {
+    background: black;
+    color: white;
+    text-decoration: none;
+}

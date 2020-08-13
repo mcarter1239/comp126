@@ -1,0 +1,37 @@
+header {
+    background: blue;
+    height: 20vh;
+    width: 100%;
+}
+
+div {
+    display: inline-block;
+}
+
+#left {
+    background: green;
+    height: 60vh;
+    width: 25%;
+    float: left;
+}
+
+#center {
+    background: purple;
+    height: 60vh;
+    width: 50%;
+
+}
+
+#right {
+    background: red;
+    height: 60vh;
+    width: 25%;
+    float: right;
+}
+
+footer {
+
+    background: teal;
+    height: 20vh;
+    width: 100%;
+}

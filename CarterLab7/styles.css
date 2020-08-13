@@ -1,0 +1,219 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 15% 70% 15%;
+    margin: 0px;
+    grid-gap: 3px;
+}
+
+.right {
+    background: blue;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+main {
+    background: green;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.left {
+    background: yellow;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background: orange;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+footer {
+    background: orange;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+div {
+    background: rgba(0, 255, 0, 0.5);
+    border-radius: 5px;
+    color: black;
+    height: 80px;
+    width: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: middle;
+    line-height: 80px;
+}
+
+div:hover {
+    background: white;
+}
+
+/* media query for tablet portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 20% 20% 20% 20% 10%;
+        grid-template-columns: 100%;
+        margin: 0px;
+        grid-gap: 3px;
+    }
+
+    .right {
+        background: blue;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    main {
+        background: green;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .left {
+        background: yellow;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    header {
+        background: orange;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    footer {
+        background: orange;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    div {
+        background: rgba(0, 255, 0, 0.5);
+        border-radius: 5px;
+        color: black;
+        height: 80px;
+        width: 100px;
+        text-align: center;
+        box-sizing: border-box;
+        vertical-align: middle;
+        line-height: 80px;
+    }
+
+    div:hover {
+        background: white;
+    }
+}
+
+/* media query for mobile portrait layout (479px or less) */
+@media only screen and (max-width: 479px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 18% 36% 18% 18% 10%;
+        grid-template-columns: 100%;
+        margin: 0px;
+        grid-gap: 3px;
+    }
+
+    .right {
+        background: blue;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    main {
+        background: green;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .left {
+        background: yellow;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    header {
+        background: orange;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    footer {
+        background: orange;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    div {
+        background: rgba(0, 255, 0, 0.5);
+        border-radius: 5px;
+        color: black;
+        height: 80px;
+        width: 100px;
+        text-align: center;
+        box-sizing: border-box;
+        vertical-align: middle;
+        line-height: 80px;
+    }
+
+    div:hover {
+        background: white;
+    }
+}

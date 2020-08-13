@@ -1,0 +1,227 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 15% 60% 25%;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+div {
+    grid-column: span 3;
+    background: #c0c0c0;
+    color: black;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 2em;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+img {
+    border-radius: 30px;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+main {
+    background: #ffffbb;
+    grid-row: span 1;
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.left {
+    background: #c0c0c0;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+
+}
+
+header {
+    background: gray;
+    grid-row: span 1;
+    grid-column: span 5;
+    align-content: center;
+    justify-content: center;
+    display: grid;
+}
+
+form {
+    background: white;
+    grid-column: 2/4;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-top: 5px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background: gray;
+    border: none;
+    padding: 5px;
+}
+
+input[type=submit]:hover {
+    background: yellow;
+}
+
+input[type=text] {
+    width: 100%;
+    border: solid 1px black;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+footer {
+    background: gray;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+ul {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+    background: #c0c0c0;
+    color: black;
+    text-align: center;
+    box-sizing: border-box;
+    grid-row: span 1;
+    padding: 15px;
+    align-self: center;
+}
+
+li:hover {
+    background: yellow;
+}
+
+/* media query for tablet portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 15% 7% 53% 30%;
+        margin: 0px;
+        font-family: sans-serif;
+    }
+
+    div {
+        grid-column: span 1;
+        background: #c0c0c0;
+        color: black;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 2em;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    img {
+        border-radius: 30px;
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    main {
+        background: #ffffbb;
+        grid-row: span 1;
+        grid-column: span 4;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .left {
+        background: #c0c0c0;
+        grid-row: span 1;
+        grid-column: span 3;
+    }
+
+    header {
+        background: gray;
+        grid-row: span 1;
+        grid-column: span 3;
+        align-content: center;
+        justify-content: center;
+        display: grid;
+    }
+
+    form {
+        background: white;
+        padding: 10px;
+        padding-bottom: 0px;
+        margin-top: 5px;
+        width: 90%;
+        height: 90%;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background: gray;
+        border: none;
+        padding: 5px;
+    }
+
+    input[type=submit]:hover {
+        background: yellow;
+    }
+
+    input[type=text] {
+        width: 100%;
+        border: solid 1px black;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    footer {
+        background: gray;
+        grid-row: span 1;
+        grid-column: span 3;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+    ul {
+        margin: 0px;
+        list-style-type: none;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    li {
+        background: #c0c0c0;
+        color: black;
+        text-align: center;
+        padding: 15px;
+        max-height: 100%;
+    }
+
+    li:hover {
+        background: yellow;
+    }
+}

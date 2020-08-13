@@ -1,0 +1,62 @@
+/* All your custom styles go here. You can override the default Bootstrap styles or add your own custom styles for elements, classes, or IDs.  */
+body {
+    background: lightgray;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.top {
+
+    padding-bottom: 1vh;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    box-sizing: border-box;
+}
+
+.col-lg {
+    padding: 0;
+    margin-left: 6vw;
+}
+
+.followupcontent {
+    width: 95vw;
+    margin-left: 3vw;
+}
+
+i {
+    height: 7vh;
+    margin-left: 2vw;
+}
+
+.input-group {
+    margin-left: 4vw;
+}
+
+.cards {
+    width: 95vw;
+    padding-top: 5vh;
+}
+
+.cards .card {
+    width: 100%;
+    background: #343841;
+    color: white;
+}
+
+.btn-primary {
+    background-color: purple;
+    color: white;
+    border: purple;
+}
+
+.btn-primary:hover {
+    background-color: rgb(192, 127, 192);
+    color: black;
+}

@@ -1,0 +1,22 @@
+.rowMiddle {
+    height: 70vh !important;
+}
+
+.row {
+    height: 15vh;
+}
+
+.darkPurple {
+    color: white;
+    background: #400080;
+}
+
+.lightPurple {
+    color: white;
+    background: #ce49eb;
+}
+
+.row>div {
+    box-sizing: border-box;
+    border: solid 2px white;
+}

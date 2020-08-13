@@ -1,0 +1,104 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+iframe {
+    grid-column: span 1;
+    grid-row: 2/3;
+    transition: all 500ms;
+    height: 75%;
+    width: 75%;
+    box-shadow: 10px 10px 10px;
+}
+
+iframe:hover {
+    height: 90%;
+    width: 90%;
+}
+
+.darken {
+    grid-column: span 1;
+    grid-row: 2/3;
+    transition: all 500ms;
+    height: 75%;
+    width: 75%;
+    opacity: 0.5;
+}
+
+.darken:hover {
+    opacity: 1;
+    box-shadow: 10px 10px 10px;
+}
+
+.bounce {
+    grid-column: span 1;
+    grid-row: 2/3;
+    transition: all 500ms;
+    height: 75%;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+.purple {
+    grid-column: span 1;
+    grid-row: 2/3;
+    transition: all 1000ms;
+    height: 200px;
+    width: 200px;
+    background: purple;
+    border-radius: 5px;
+}
+
+.purple:hover {
+    transform: rotate(90deg);
+}
+
+/* h1 {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    transition: all 1000ms;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1:hover {
+    opacity: 1;
+} */
+
+h1 {
+    animation: animateheading 2s ease-in-out 2;
+}
+
+@keyframes animateheading {
+    from {
+        font-size: 120%;
+    }
+
+    to {
+        font-size: 200%;
+    }
+}

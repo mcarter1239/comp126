@@ -1,0 +1,57 @@
+h1 {
+    color: #0006fd;
+    font-family: cursive;
+    font-size: 2em;
+}
+
+h2 {
+    color: #0400ff;
+    font-family: cursive;
+    font-size: 1.5em;
+}
+
+#colors {
+    color: #0dff00;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-family: cursive;
+    font-size: 12pt;
+}
+
+
+a:link {
+    color: chartreuse
+}
+
+a:visited {
+    color: rgb(255, 0, 0)
+}
+
+a:hover {
+    color: hotpink
+}
+
+a:active {
+    color: indigo
+}
+
+li {
+    font-family: cursive;
+    font-size: 10pt;
+}
+
+.test::selection {
+    color: aqua;
+    background-color: black
+}
+
+body {
+    background-color: azure;
+}
